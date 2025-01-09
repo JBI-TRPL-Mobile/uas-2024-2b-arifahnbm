@@ -13,3 +13,13 @@ Halaman Sign Up
 
 Halaman Home
 ![alt text](image-3.png)
+
+Halaman Message
+![alt text](image-4.png)
+
+Halaman Profile
+![alt text](image-5.png)
+
+Pop up Logout
+![alt text](image-6.png)
+

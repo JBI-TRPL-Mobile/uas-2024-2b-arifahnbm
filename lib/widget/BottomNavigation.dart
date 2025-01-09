@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:template_project/screens/home_screen.dart';
 import 'package:template_project/screens/message_screen.dart';
+import 'package:template_project/screens/profile_screen.dart';
 class Bottomnavigation extends StatefulWidget {
   const Bottomnavigation({super.key});
   @override
@@ -11,6 +12,7 @@ class _BottomnavigationState extends State<Bottomnavigation> {
   final List<Widget> _pages = [
     HomeScreen(),
     MessageScreen(),
+    ProfileScreen(),
   ];
   void _onTap(int index) {
     setState(() {
@@ -29,7 +31,7 @@ class _BottomnavigationState extends State<Bottomnavigation> {
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.message), label: 'Message'),
           // BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
-          // BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+         BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
         ],
       ),
     );
