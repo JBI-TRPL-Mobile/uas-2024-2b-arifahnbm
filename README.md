@@ -7,3 +7,9 @@ Halaman Utama
 
 Halaman Sign In
 ![alt text](image-1.png)
+
+Halaman Sign Up
+![alt text](image-2.png)
+
+Halaman Home
+![alt text](image-3.png)

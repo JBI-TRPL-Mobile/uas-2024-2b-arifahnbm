@@ -6,6 +6,7 @@ import 'package:template_project/screens/sign_in_screen.dart';
 import 'package:template_project/screens/sign_up_screen.dart';
 import 'package:template_project/providers/data_provider.dart';
 import 'package:template_project/providers/user_provider.dart';
+import 'package:template_project/Widget/BottomNavigation.dart';
 
 void main() {
   runApp(MultiProvider(
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         '/signin': (context) => SignInScreen(),
         '/signup': (context) => SignUpScreen(),
         '/home': (context) => HomeScreen(),
+        '/navigation': (context) => Bottomnavigation(),
       },
     );
   }

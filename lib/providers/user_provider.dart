@@ -27,6 +27,7 @@ class UserProvider with ChangeNotifier {
   Future<bool> login(String email, String password) async {
     bool success = await UserService.verifyLogin(email, password);
     if (success) {
+      _name = name;
       _email = email;
       _password = password;
       notifyListeners();
