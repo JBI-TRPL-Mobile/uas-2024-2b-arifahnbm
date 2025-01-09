@@ -1,7 +1,8 @@
-{
-    "id": 1,
-    "name": "Arifah Nur B",
-    "email": "arifah@gmail.com",
-    "profile_picture": "https://example.com/profile-picture.jpg"
-}
+[
+    {
+      "id": 1,
+      "name": "Arifah Nur B",
+      "email": "arifah@gmail.com"
+    }
+]
   

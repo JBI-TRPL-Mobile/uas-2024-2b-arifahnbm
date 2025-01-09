@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:template_project/screens/sign_in_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -22,7 +23,7 @@ class WelcomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ElevatedButton(
-                onPressed: () => Navigator.pushNamed(context, '/signin'),
+                onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => SignInScreen())),
                 child: Text('Sign In'),
               ),
               SizedBox(width: 20,),

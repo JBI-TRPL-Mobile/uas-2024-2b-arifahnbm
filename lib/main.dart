@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:template_project/screens/welcome_screen.dart';
-import 'package:template_project/screens/signin_screen.dart';
+import 'providers/user_provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -11,24 +12,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'UAS Arifah Nur',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueAccent),
-        useMaterial3: true,
+    return ChangeNotifierProvider(
+      create: (context) => UserProvider(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: WelcomeScreen(),
       ),
-      initialRoute: '/',
-      routes: {
-        '/': (context) => WelcomeScreen(),
-        // '/home': (context) => HomeScreen(),
-        // '/signup': (context) => SignUpScreen(),
-        '/signin': (context) => SignInScreen(),
-      },
     );
   }
 }
-
-
-
-
